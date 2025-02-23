@@ -50,7 +50,7 @@ function Blogs() {
         </div>
       </section>
       <div className=" max-w-containers mx-auto">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 ">
+        <div className="md:grid md:grid-cols-2 gap-3 lg:gap-8 ">
           <Link href="blog/details" className="col-span-1 relative block">
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
@@ -59,7 +59,7 @@ function Blogs() {
               height={500}
               className="w-[50%]"
             />
-            <div className="absolute sm:w-full lg:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+            <div className="absolute sm:w-full md:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
               <h5 className="text-base text-textColor font-semibold">
                 UI Design . 02 May 2019
               </h5>
@@ -81,7 +81,7 @@ function Blogs() {
               height={500}
               className="w-[50%]"
             />
-            <div className="absolute sm:w-full lg:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+            <div className="absolute sm:w-full md:w-[50%]   top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
               <h5 className="text-base text-textColor font-semibold">
                 UI Design . 02 May 2019
               </h5>
