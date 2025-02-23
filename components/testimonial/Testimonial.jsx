@@ -37,7 +37,7 @@ function Testimonial() {
     },
   ];
   return (
-    <section className="lg:testimonials relative ">
+    <section className="testimonials relative ">
       <div className=" hidden lg:block">
         <Image
           src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.5fcd9521.jpg&w=256&q=75"

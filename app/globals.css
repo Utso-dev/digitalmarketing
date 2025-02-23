@@ -111,17 +111,17 @@
   }
 } */
 
-/* @media only screen and (max-width: 768px) {
-  .testimonial {
+@media only screen and (max-width: 768px) {
+  .testimonials {
     background-image: url("https://axtra-next-agency.vercel.app/assets/imgs/testimonial/3/bg.png");
     background-repeat: no-repeat;
     background-position: -75px 75px;
     position: relative;
-    padding-top: 488px;
-    padding-bottom: 265px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     overflow: hidden;
   }
-} */
+}
 .testimonials {
   background-image: url("https://axtra-next-agency.vercel.app/assets/imgs/testimonial/3/bg.png");
   background-repeat: no-repeat;

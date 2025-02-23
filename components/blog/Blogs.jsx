@@ -49,52 +49,53 @@ function Blogs() {
           </div>
         </div>
       </section>
-
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-        <Link href="blog/details" className="col-span-1 relative block">
-          <Image
-            src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
-            alt="blogs"
-            width={300}
-            height={500}
-            className="w-[50%]"
-          />
-          <div className="absolute sm:w-full lg:w-auto top-[-20px] left-[10%] lg:top-[42%] lg:right-16 bg-whiteColor pl-6 py-6 space-y-3">
-            <h5 className="text-base text-textColor font-semibold">
-              UI Design . 02 May 2019
-            </h5>
-            <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
-              How to bring fold to your startup company with Axtra
-            </h3>
-            <div className="border-t-[1px] border-textSecondColor">
-              <button className="pt-3 text-base text-textSecondColor font-semibold flex gap-2">
-                Read More <ArrowUpRight />
-              </button>
+      <div className=" max-w-containers mx-auto">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8 ">
+          <Link href="blog/details" className="col-span-1 relative block">
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
+              alt="blogs"
+              width={300}
+              height={500}
+              className="w-[50%]"
+            />
+            <div className="absolute sm:w-full lg:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+              <h5 className="text-base text-textColor font-semibold">
+                UI Design . 02 May 2019
+              </h5>
+              <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
+                How to bring fold to your startup company with Axtra
+              </h3>
+              <div className="border-t-[1px] border-textSecondColor">
+                <button className="pt-3 text-base text-textSecondColor font-semibold flex gap-2">
+                  Read More <ArrowUpRight />
+                </button>
+              </div>
             </div>
-          </div>
-        </Link>
-        <Link href="blog/details" className="col-span-1 relative block">
-          <Image
-            src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
-            alt="blogs"
-            width={300}
-            height={500}
-            className="w-[50%]"
-          />
-          <div className="absolute sm:w-full lg:w-auto top-[-20px] left-[10%] lg:top-[42%] lg:right-16 bg-whiteColor pl-6 py-6 space-y-3">
-            <h5 className="text-base text-textColor font-semibold">
-              UI Design . 02 May 2019
-            </h5>
-            <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
-              How to bring fold to your startup company with Axtra
-            </h3>
-            <div className="border-t-[1px] border-textSecondColor">
-              <button className="pt-3 text-base text-textSecondColor font-semibold flex gap-2">
-                Read More <ArrowUpRight />
-              </button>
+          </Link>
+          <Link href="blog/details" className="col-span-1 relative block">
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
+              alt="blogs"
+              width={300}
+              height={500}
+              className="w-[50%]"
+            />
+            <div className="absolute sm:w-full lg:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+              <h5 className="text-base text-textColor font-semibold">
+                UI Design . 02 May 2019
+              </h5>
+              <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
+                How to bring fold to your startup company with Axtra
+              </h3>
+              <div className="border-t-[1px] border-textSecondColor">
+                <button className="pt-3 text-base text-textSecondColor font-semibold flex gap-2">
+                  Read More <ArrowUpRight />
+                </button>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </>
   );
