@@ -23,6 +23,7 @@ export default function Home() {
       <div className="">
         <About />
       </div>
+
       <div className="lg:mb-[100px] mb-10">
         <Services />
       </div>
