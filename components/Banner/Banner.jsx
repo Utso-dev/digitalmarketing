@@ -54,15 +54,15 @@ function Banner() {
         </div>
       </section>
       <div className=" lg:grid  lg:grid-cols-3">
-        <div className="col-span-1  hidden lg:block">
-          <div className="  flex items-center justify-center    ">
+        <div className="col-span-1 h-full hidden lg:block">
+          <div className="  flex mt-28 justify-center    ">
             <button className="py-10 px-2 border border-textColor rounded-[20px] relative animate-moveDown">
               <MoveDown className=" text-textColor" />
             </button>
           </div>
         </div>
 
-        <div className=" lg:col-span-2">
+        <div className=" lg:col-span-2 lg:mt-10">
           <Image
             src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.b1728b9b.jpg&w=3840&q=75"
             width={100}
