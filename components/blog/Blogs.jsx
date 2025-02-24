@@ -28,7 +28,7 @@ function Blogs() {
         </div>
       </section> */}
       <section className=" py-10 px-2.5 lg:px-0 lg:py-[100px] relative  lg:after:absolute lg:after:content-[''] lg:after:h-full lg:after:w-[1px] lg:after:bg-[#efefef] lg:after:top-0 lg:after:right-[58%] ">
-        <div className=" max-w-containers mx-auto">
+        <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
           <div className=" lg:px-[360px] relative bg-whiteColor z-30 lg:py-10">
             <h5
               className="mb-2 uppercase text-textColor
@@ -49,17 +49,17 @@ function Blogs() {
           </div>
         </div>
       </section>
-      <div className=" max-w-containers mx-auto">
-        <div className="md:grid md:grid-cols-2 gap-3 lg:gap-8 ">
+      <div className=" lg:mt-24 lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
+        <div className="md:grid  md:grid-cols-2 gap-3 lg:gap-8 ">
           <Link href="blog/details" className="col-span-1 relative block">
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
               alt="blogs"
               width={300}
               height={500}
-              className="w-[50%]"
+              className="w-[50%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
             />
-            <div className="absolute sm:w-full md:w-[50%]  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+            <div className="absolute w-full  sm:w-[50%] sm:top-[0%] h-full lg:h-[60%]  top-[-20px] md:left-28 left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
               <h5 className="text-base text-textColor font-semibold">
                 UI Design . 02 May 2019
               </h5>
@@ -73,15 +73,18 @@ function Blogs() {
               </div>
             </div>
           </Link>
-          <Link href="blog/details" className="col-span-1 relative block">
+          <Link
+            href="blog/details"
+            className="col-span-1 mt-5 lg:mt-0 relative block"
+          >
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.8079d114.jpg&w=750&q=75"
               alt="blogs"
               width={300}
               height={500}
-              className="w-[50%]"
+              className="w-[50%] md:w-[60%]  lg:w-[50%] sm:w-[30%]"
             />
-            <div className="absolute sm:w-full md:w-[50%]   top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+            <div className="absolute w-full md:left-28  lg:h-[60%]  sm:w-[50%] sm:top-[0%] h-full  top-[-20px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
               <h5 className="text-base text-textColor font-semibold">
                 UI Design . 02 May 2019
               </h5>

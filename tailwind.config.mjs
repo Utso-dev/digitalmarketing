@@ -9,8 +9,9 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        container: "1320px",
         containers: "1360px", // Now inside extend, so it works
+        mdcontainers: "760px", // Now inside extend, so it works
+        smcontainers: "600px", // Now inside extend, so it works
       },
       keyframes: {
         moveDown: {

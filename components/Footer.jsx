@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blackColor text-whiteColor  ">
-      <div className="container mx-auto lg:flex px-2.5 lg:px-0  justify-between items-center">
-        <div className="space-y-4">
+    <footer className="bg-blackColor text-whiteColor py-10 ">
+      <div className="container mx-auto md:flex px-2.5 lg:px-0  justify-between items-center">
+        <div className="space-y-4 md:w-[30%]">
           <div>
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsite-logo-white-2.c8e48a63.png&w=256&q=75"
@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col  text-center mt-6 md:mt-0">
+        <div className="flex flex-col  text-center mt-6 md:mt-0 md:w-[30%]">
           {["FACEBOOK", "TWITTER", "LINKEDIN", "INSTAGRAM"].map((platform) => (
             <button
               key={platform}
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="lg:text-right text-center mt-6 md:mt-0">
+        <div className="lg:text-right text-center mt-6 md:mt-0 md:w-[40%] lg:w-[60%]">
           <h2 className="xl:text-[150px] py-3 text-[50px] font-semibold bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 text-transparent bg-clip-text">
             LET'S TALK
           </h2>
@@ -41,7 +41,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t text-center  lg:text-start border-borderColor container mx-auto  py-10 flex   flex-col-reverse md:flex-row justify-between items-center">
+      <div className="border-t text-center  lg:text-start border-borderColor container mx-auto  py-10 flex   flex-col-reverse lg:flex-row justify-between items-center">
         <p className="text-base font-semibold text-whiteColor">
           © 2022 - 2025 | All rights reserved <br /> by Wealcoder
         </p>

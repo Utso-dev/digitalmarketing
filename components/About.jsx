@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function About() {
   return (
-    <section className="bg-blackColor py-28 relative   after:absolute after:content-[''] after:h-full after:w-[1px] after:bg-textColor after:top-0 after:right-[39rem] ">
-      <div className="max-w-containers mx-auto px-2.5 lg:px-0">
-        <div className="lg:grid grid-cols-2 gap-20 ">
+    <section className="bg-blackColor py-28 relative   lg:after:absolute lg:after:content-[''] after:h-full after:w-[1px] after:bg-textColor after:top-0 after:right-[39rem] ">
+      <div className="md:max-w-containers sm:max-w-smcontainers mx-auto px-2.5 lg:px-0">
+        <div className="md:grid grid-cols-2 lg:gap-20 md:gap-7 ">
           <div className="col-span-1">
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.155b0493.jpg&w=1200&q=75"
@@ -16,8 +16,8 @@ function About() {
             />
           </div>
           <div className="col-span-1 relative">
-            <div className="">
-              <div className="bg-blackColor z-30 py-8 relative">
+            <div className=" sm:pr-28 md:pr-0">
+              <div className="bg-blackColor z-30 md:py-0 py-8 relative">
                 {" "}
                 {/* Added padding for better layout */}
                 <h6 className="mb-2 uppercase text-whiteColor text-[18px] font-bold">

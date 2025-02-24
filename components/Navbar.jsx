@@ -38,10 +38,10 @@ const Navbar = () => {
             height={75}
             src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black.f3d0d1c4.png&w=384&q=75"
             alt="logo "
-            className=" object-cover w-[50px] lg:[150px]"
+            className=" object-cover w-[50px] sm:w-[80px] lg:w-[150px]"
           />
         </div>
-        <div className="hidden md:text-[12px]  lg:text-[18px] uppercase font-semibold text-center md:flex space-x-10 items-center">
+        <div className="hidden md:text-[12px]  lg:text-[18px] uppercase font-semibold text-center md:flex space-x-2 xl:space-x-10 items-center">
           <Link
             href="/"
             className="text-blackColor hover:textColor px-3 py-2 rounded-md font-medium"

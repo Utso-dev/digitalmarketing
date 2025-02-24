@@ -52,11 +52,11 @@ export default function Feature() {
 
   return (
     <section className="bg-black text-white py-28 relative">
-      <div className="max-w-7xl mx-auto lg:px-10 px-4">
+      <div className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto lg:px-10 px-4">
         <p className="text-sm uppercase opacity-80">Featured Work</p>
 
         {/* Slide Counter */}
-        <div className="absolute lg:top-20 top-40 left-16 z-50 lg:left-[40%] transform -translate-x-1/2 text-2xl font-semibold flex gap-2 items-center">
+        <div className="absolute lg:top-20 top-40 left-16 sm:left-24 sm:top-44 z-50 lg:left-[40%] transform -translate-x-1/2 text-2xl font-semibold flex gap-2 items-center">
           <span className="text-5xl font-bold">{currentIndex} /</span>{" "}
           {projects.length}
         </div>
@@ -87,14 +87,14 @@ export default function Feature() {
                     height={600}
                     className="w-full h-[600px] object-cover"
                   />
-                  <div className="absolute top-1/2 -translate-y-1/2 left-[-670px] lg:left-[-560px]">
-                    <h2 className="lg:text-[150px] text-6xl leading-[70px] lg:leading-[150px] font-bold">
+                  <div className="absolute top-1/2 -translate-y-1/2 left-[-670px] sm:left-[-580px] lg:left-[-560px]">
+                    <h2 className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] lg:leading-[150px] font-bold">
                       {project.title}
                     </h2>
-                    <h2 className="lg:text-[150px] text-6xl leading-[70px] pl-8 lg:pl-28 font-bold lg:leading-[150px]">
+                    <h2 className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] pl-8 sm:pl-12 lg:pl-28 font-bold lg:leading-[150px]">
                       {project.title2}
                     </h2>
-                    <p className="lg:text-[150px] text-6xl  leading-[70px] lg:leading-[150px] font-bold">
+                    <p className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl  leading-[70px] lg:leading-[150px] font-bold">
                       {project.year}
                     </p>
                   </div>
@@ -108,13 +108,13 @@ export default function Feature() {
         <div className=" flex gap-4">
           <button
             onClick={goPrev}
-            className="px-3 absolute left-4 lg:left-56 top-1/2 z-30  py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
+            className="px-3 absolute left-4 sm:left-10 lg:left-56 top-1/2 z-30  py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
           >
             <ArrowLeft />
           </button>
           <button
             onClick={goNext}
-            className="px-3 absolute right-4 lg:right-44 top-1/2 z-30   py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
+            className="px-3 absolute sm:right-10 right-4 lg:right-44 top-1/2 z-30   py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
           >
             <ArrowRight />
           </button>

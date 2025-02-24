@@ -33,7 +33,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-bg4Color py-16 px-2.5 md:px-12">
-      <div className=" max-w-containers mx-auto">
+      <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
         {/* Heading */}
         <div className="lg:grid grid-cols-2 gap-20">
           <div className=" col-span-1">
@@ -76,7 +76,7 @@ const Pricing = () => {
 
           <div className=" col-span-1">
             {/* Subscription Cards */}
-            <div className="space-y-6">
+            <div className="space-y-6 mt-10">
               <div className="bg-blackColor text-whiteColor py-8 p-6 rounded-xl relative shadow-lg">
                 <span className="absolute top-[-14px] right-7 bg-bgRedColor text-whiteColor text-xs font-bold px-3 py-1 rounded-lg">
                   BEST VALUE

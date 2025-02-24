@@ -82,7 +82,7 @@ function Testimonial() {
           className=" absolute top-[680px] right-[15%] "
         />
       </div>
-      <div className="max-w-containers lg:w-1/3 mx-auto ">
+      <div className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers lg:w-1/3 mx-auto ">
         <div className="max-w-containers flex justify-center  text-center ">
           <Swiper
             spaceBetween={50}

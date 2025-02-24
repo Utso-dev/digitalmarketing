@@ -3,18 +3,18 @@ import { ArrowUpRight } from "lucide-react";
 export default function SEOSection({ item }) {
   return (
     <section className="lg:py-16 py-12 px-2.5 lg:px-0 border-t border-gray-300">
-      <div className=" mx-auto  lg:grid grid-cols-3 gap-8 items-center">
+      <div className=" mx-auto  md:grid grid-cols-3 gap-8 items-center">
         {/* Left Section - Heading */}
-        <h2 className="lg:text-4xl text-3xl font-bold col-span-1 mb-4 lg:mb-0 leading-tight">
+        <h2 className="lg:text-4xl md:text-2xl text-3xl font-bold col-span-1 mb-4 lg:mb-0 leading-tight">
           {item?.title}
         </h2>
 
         {/* Middle Section - Description */}
         <div className="col-span-1">
-          <p className="text-textColor text-lg font-bold   mb-6 lg:mb-4">
+          <p className="text-textColor md:text-base md:font-semibold text-lg font-bold   mb-6 md:mb-4">
             {item?.description}
           </p>
-          <ul className="text-blackColor text-lg font-bold space-y-1">
+          <ul className="text-blackColor md:font-semibold text-lg font-bold space-y-1">
             {item.services.map((service, index) => (
               <li key={index}>+ {service}</li>
             ))}
