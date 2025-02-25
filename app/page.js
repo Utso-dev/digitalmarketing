@@ -4,6 +4,7 @@ import Blogs from "@/components/blog/Blogs";
 import Brand from "@/components/brand/Brand";
 import Choose from "@/components/choose/Choose";
 import MarketingSection from "@/components/choose/MarketinSection";
+import Scroll from "@/components/demo/Scrolls";
 import Feature from "@/components/Feature/Feature";
 import PriceTable from "@/components/priceTable/PriceTable";
 import Project from "@/components/Project";
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="mb-[100px]">
         <Brand />
       </div>
+
       <div className="">
         <About />
       </div>
@@ -33,17 +35,22 @@ export default function Home() {
       <div className="lg:mb-[100px] mb-20">
         <Testimonial />
       </div>
-      <div className="">
-        <Choose />
+      <div className=" lg:hidden">
+        <div className="">
+          <Choose />
+        </div>
+        <div className="">
+          <MarketingSection />
+        </div>
+        <div className="">
+          <WorkFlow />
+        </div>
+        <div className="">
+          <Project />
+        </div>
       </div>
       <div className="">
-        <MarketingSection />
-      </div>
-      <div className="">
-        <WorkFlow />
-      </div>
-      <div className="">
-        <Project />
+        <Scroll />
       </div>
       <div className="">
         <PriceTable />

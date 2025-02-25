@@ -1,109 +1,23 @@
-"use client";
-import { motion } from "framer-motion";
-import { MoveDown, Play } from "lucide-react";
-import Image from "next/image";
+import { MoveDown } from "lucide-react";
+import BannerImage from "./BannerImage";
+import BannerText from "./BannerText";
+import BannerVideo from "./BannerVideo";
 
 function Banner() {
-  const textVariant = {
-    hidden: { x: 200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
-  const textVariant1 = {
-    hidden: { x: 200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.9, ease: "easeOut" },
-    },
-  };
-  const textVariant2 = {
-    hidden: { x: 200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 1, ease: "easeOut" },
-    },
-  };
-  const textVariant3 = {
-    hidden: { x: 200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.11, ease: "easeOut" },
-    },
-  };
+  const text = "MARK";
+  const name1 = text.split("");
+  const text2 = "ETING";
+  const name2 = text2.split("");
+
   return (
     <>
       <section className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers relative mx-auto  px-2.5 lg:px-0">
         <div className="sm:grid grid-cols-5 gap-5 ">
           <div className=" col-span-3">
-            <div className="relative">
-              <motion.h4
-                initial="hidden"
-                animate="visible"
-                variants={textVariant}
-                className="font-bold uppercase text-lg lg:text-2xl after:absolute after:content-[''] after:top-1/2 left-10 lg:after:left-28 after:ml-4 after:w-10 lg:after:w-28 after:h-[1px] after:bg-black"
-              >
-                Digital
-              </motion.h4>
-            </div>
-
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={textVariant1}
-              className=" text-[42px] sm:text-[100px] sm:leading-[100px] leading-10 uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
-            >
-              MARK
-            </motion.h1>
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={textVariant2}
-              className=" sm:ml-[13rem] md:absolute leading-10 sm:leading-[100px]   sm:text-[100px] lg:right-0 md:right-10 ml-[4.5rem] md:text-[110px]  md:leading-[100px] uppercase text-[42px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
-            >
-              ETING
-            </motion.h1>
-            <motion.p
-              initial="hidden"
-              animate="visible"
-              variants={textVariant}
-              className=" sm:pr-28 md:pr-28 lg:pr-[350px] my-5 lg:mt-10 text-[12px] sm:text-sm  text-justify lg:text-[20px] font-normal sm:font-semibold text-textColor"
-            >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
-              soluta eos. Numquam pariatur enim alias porro necessitatibus eaque
-              reprehenderit laboriosam adipisci?
-            </motion.p>
+            <BannerText />
           </div>
           <div className=" col-span-2 mt-16 hidden lg:block ">
-            <div className="flex justify-end items-center gap-4">
-              <div className=" relative w-[150px] h-[150px] rounded-full border overflow-hidden border-textColor  mt-2">
-                <button className=" absolute w-full h-full  bg-[rgba(0,0,0,100)]">
-                  <p className=" p-3 bg-blackColor rounded-full absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 left-1/2 b">
-                    <Play color="#fff" size={15} />
-                  </p>
-                  <video
-                    src="https://www.w3schools.com/html/mov_bbb.mp4" // Replace with actual video URL
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                  ></video>
-                </button>
-              </div>
-              <div>
-                <h5 className=" text-[16px] uppercase text-blackColor font-bold">
-                  Watch
-                </h5>
-                <h3 className=" uppercase text-[18px] text-blackColor font-bold">
-                  video intro
-                </h3>
-              </div>
-            </div>
+            <BannerVideo />
           </div>
         </div>
       </section>
@@ -115,15 +29,8 @@ function Banner() {
             </button>
           </div>
         </div>
-
         <div className=" lg:col-span-2 lg:mt-10">
-          <Image
-            src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.b1728b9b.jpg&w=3840&q=75"
-            width={100}
-            height={100}
-            className="object-cover w-full lg:h-full"
-            alt="banner image "
-          />
+          <BannerImage />
         </div>
       </div>
     </>

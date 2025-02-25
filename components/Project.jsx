@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 function Project() {
   return (
-    <section className=" lg:bg-[#e0e3cc] bg-whiteColor items-center justify-center p-10">
+    <section className=" lg:bg-[#e0e3cc] bg-whiteColor items-center justify-center p-10  lg:pb-48">
       <div className=" max-w-containers mx-auto text-center">
         <h5 className=" text-2xl font-medium text-blackColor2 ">
           Have you project in mind?

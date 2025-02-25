@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function WorkFlow() {
   return (
-    <section className="bg-bgSecondColor pt-28">
+    <section className="bg-bgSecondColor md:pt-28 pt-14 pb-10 lg:pb-48">
       <div className="max-w-containers mx-auto">
         <div className="lg:grid grid-cols-2 gap-7">
           <div className="col-span-1 pb-10">
