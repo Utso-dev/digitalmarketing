@@ -5,11 +5,35 @@ import Image from "next/image";
 
 function Banner() {
   const textVariant = {
-    hidden: { x: -100, opacity: 0 },
+    hidden: { x: 200, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
       transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+  const textVariant1 = {
+    hidden: { x: 200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.9, ease: "easeOut" },
+    },
+  };
+  const textVariant2 = {
+    hidden: { x: 200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 1, ease: "easeOut" },
+    },
+  };
+  const textVariant3 = {
+    hidden: { x: 200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.11, ease: "easeOut" },
     },
   };
   return (
@@ -31,7 +55,7 @@ function Banner() {
             <motion.h1
               initial="hidden"
               animate="visible"
-              variants={textVariant}
+              variants={textVariant1}
               className=" text-[42px] sm:text-[100px] sm:leading-[100px] leading-10 uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
             >
               MARK
@@ -39,7 +63,7 @@ function Banner() {
             <motion.h1
               initial="hidden"
               animate="visible"
-              variants={textVariant}
+              variants={textVariant2}
               className=" sm:ml-[13rem] md:absolute leading-10 sm:leading-[100px]   sm:text-[100px] lg:right-0 md:right-10 ml-[4.5rem] md:text-[110px]  md:leading-[100px] uppercase text-[42px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
             >
               ETING

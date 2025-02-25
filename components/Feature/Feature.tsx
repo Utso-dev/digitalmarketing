@@ -87,7 +87,7 @@ export default function Feature() {
                     height={600}
                     className="w-full h-[600px] object-cover"
                   />
-                  <div className="absolute top-1/2 -translate-y-1/2 left-[-670px] sm:left-[-580px] lg:left-[-560px]">
+                  <div className="absolute top-1/2 -translate-y-1/2 left-[-750px] sm:left-[-580px] lg:left-[-560px]">
                     <h2 className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] lg:leading-[150px] font-bold">
                       {project.title}
                     </h2>

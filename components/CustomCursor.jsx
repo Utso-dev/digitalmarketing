@@ -16,7 +16,7 @@ export default function CustomCursor() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full pointer-events-none">
+    <div className="fixed top-0 left-0 w-full z-50 h-full pointer-events-non hidden lg:block">
       {/* Outer Ring */}
       <motion.div
         className="fixed w-12 h-12 border-[1px] border-blue-600 rounded-full"
