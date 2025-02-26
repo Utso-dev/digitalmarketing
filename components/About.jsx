@@ -4,16 +4,6 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 function About() {
-  // Animation variants
-  const fadeInUp = {
-    hidden: { y: -100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 1, ease: "easeOut" },
-    },
-  };
-
   return (
     <section className="bg-blackColor py-28 relative lg:after:absolute lg:after:content-[''] after:h-full after:w-[1px] after:bg-textColor after:top-0 after:right-[39rem]">
       <div className="md:max-w-containers sm:max-w-smcontainers mx-auto px-2.5 lg:px-0">
@@ -32,20 +22,20 @@ function About() {
               <div className="bg-blackColor z-30 md:py-0 py-8 relative">
                 {/* Animated Heading */}
                 <motion.h6
-                  variants={fadeInUp}
-                  initial="hidden"
-                  whileInView="visible"
+                  initial={{ y: -100, x: 50, opacity: 0 }}
+                  whileInView={{ y: 0, x: 0, opacity: 1 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 1, ease: "easeOut" }}
                   className="mb-2 uppercase text-whiteColor text-[18px] font-bold"
                 >
                   Who We Are
                 </motion.h6>
 
                 <motion.h2
-                  variants={fadeInUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ delay: 0.5 }} // Slight delay
+                  initial={{ y: -100, x: 50, opacity: 0 }}
+                  whileInView={{ y: 0, x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.2, ease: "easeOut" }}
                   className="uppercase text-whiteColor text-3xl lg:text-[60px] lg:leading-[65px] font-bold"
                 >
                   We are a leading digital marketing agency.
@@ -54,10 +44,10 @@ function About() {
 
               <div className="lg:pl-[11.5rem] lg:mt-20 mt-6">
                 <motion.p
-                  variants={fadeInUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ delay: 0.8 }}
+                  initial={{ y: -100, x: 50, opacity: 0 }}
+                  whileInView={{ y: 0, x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
                   className="text-textSecondColor text-[18px] leading-6 font-semibold"
                 >
                   We’re a team of strategic digital marketing experts working

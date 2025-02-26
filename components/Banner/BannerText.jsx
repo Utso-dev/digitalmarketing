@@ -15,9 +15,9 @@ function BannerText() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className=" text-[42px] sm:text-[100px] sm:leading-[100px] leading-10 uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
         >
@@ -27,7 +27,7 @@ function BannerText() {
               key={i}
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: i / 5 }}
+              transition={{ duration: 1, delay: i / 6 }}
               viewport={{ once: true }}
             >
               {w}
@@ -35,18 +35,18 @@ function BannerText() {
           ))}
         </motion.div>
         <motion.h1
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
           className=" sm:ml-[13rem] md:absolute leading-10 sm:leading-[100px] z-30  sm:text-[100px] lg:right-0 md:right-10 ml-[4.5rem] md:text-[110px]  md:leading-[100px] uppercase text-[42px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
         >
           {name2.map((w, i) => (
             <motion.span
               key={i}
-              initial={{ opacity: 0, x: 200 }}
+              initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: i / 5 }}
+              transition={{ duration: 1, delay: i / 6 }}
               viewport={{ once: true }}
             >
               {w}

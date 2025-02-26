@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import CountUp from "react-countup";
 
 function WorkFlow() {
   return (
@@ -10,7 +12,7 @@ function WorkFlow() {
               <div className="flex text-center justify-around">
                 <div>
                   <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
-                    25k
+                    <CountUp end={25} duration={5} />K
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
                     Project <br /> completed
@@ -18,7 +20,7 @@ function WorkFlow() {
                 </div>
                 <div>
                   <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
-                    8k
+                    <CountUp end={8} duration={5} />k
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
                     Happy <br /> customers
@@ -28,7 +30,7 @@ function WorkFlow() {
               <div className="flex text-center justify-around mt-10">
                 <div>
                   <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
-                    15
+                    <CountUp end={15} duration={5} />
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
                     Years <br /> experiences
@@ -36,7 +38,7 @@ function WorkFlow() {
                 </div>
                 <div>
                   <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
-                    98
+                    <CountUp end={98} duration={5} />
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
                     Awards

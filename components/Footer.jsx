@@ -1,6 +1,7 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="bg-blackColor text-whiteColor py-10 lg:py-0 ">
@@ -34,9 +35,14 @@ export default function Footer() {
 
         {/* Right Section */}
         <div className="lg:text-right text-center mt-6 md:mt-0 md:w-[40%] lg:w-[60%]">
-          <h2 className="xl:text-[150px] py-3 text-[50px] font-semibold bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 text-transparent bg-clip-text">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="xl:text-[150px] py-3 text-[50px] font-semibold bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 text-transparent bg-clip-text"
+          >
             LET'S TALK
-          </h2>
+          </motion.h2>
         </div>
       </div>
 

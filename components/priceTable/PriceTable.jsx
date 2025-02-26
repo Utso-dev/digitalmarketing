@@ -1,7 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useState } from "react";
-
 const Pricing = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -37,12 +37,34 @@ const Pricing = () => {
         {/* Heading */}
         <div className="lg:grid grid-cols-2 gap-20">
           <div className=" col-span-1">
-            <h4 className=" text-lg text-textColor font-semibold uppercase">
+            <motion.h4
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1.2,
+                delay: 1,
+
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+              className=" text-lg text-textColor font-semibold uppercase"
+            >
               Pricing Table
-            </h4>
-            <h2 className="lg:text-[60px] lg:leading-[70px] text-3xl font-bold text-blackColor mb-8">
+            </motion.h4>
+            <motion.h2
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1.2,
+                delay: 1,
+
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+              className="lg:text-[60px] lg:leading-[70px] text-3xl font-bold text-blackColor mb-8"
+            >
               BE KIND TO YOUR MIND
-            </h2>
+            </motion.h2>
 
             {/* Pricing Section */}
             <div className="">
@@ -77,7 +99,18 @@ const Pricing = () => {
           <div className=" col-span-1">
             {/* Subscription Cards */}
             <div className="space-y-6 mt-10">
-              <div className="bg-blackColor text-whiteColor py-8 p-6 rounded-xl relative shadow-lg">
+              <motion.div
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.2,
+                  delay: 1,
+
+                  ease: "easeOut",
+                }}
+                viewport={{ once: true }}
+                className="bg-blackColor text-whiteColor py-8 p-6 rounded-xl relative shadow-lg"
+              >
                 <span className="absolute top-[-14px] right-7 bg-bgRedColor text-whiteColor text-xs font-bold px-3 py-1 rounded-lg">
                   BEST VALUE
                 </span>
@@ -113,8 +146,19 @@ const Pricing = () => {
 
                   {/* Price */}
                 </div>
-              </div>
-              <div className="bg-whiteColor text-blackColor py-8 p-6 rounded-xl relative shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.2,
+                  delay: 1,
+
+                  ease: "easeOut",
+                }}
+                viewport={{ once: true }}
+                className="bg-whiteColor text-blackColor py-8 p-6 rounded-xl relative shadow-lg"
+              >
                 <div className="flex  items-center  gap-4">
                   <div className="w-[15%] lg:w-[10%]">
                     {" "}
@@ -147,15 +191,27 @@ const Pricing = () => {
 
                   {/* Price */}
                 </div>
-              </div>
+              </motion.div>
             </div>
             {/* Call to Action */}
-            <div className="flex justify-start mt-20">
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                delay: 1,
+                type: "spring",
+                bounce: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+              className="flex justify-start mt-20"
+            >
               <button className="w-40 h-40 border-2 border-blackColor rounded-full flex flex-col items-center justify-center transition hover:bg-blackColor hover:text-whiteColor">
                 <span className="text-lg font-semibold">Try It</span>
                 <span className="text-lg font-semibold">Free Now →</span>
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

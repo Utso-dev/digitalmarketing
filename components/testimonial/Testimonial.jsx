@@ -1,7 +1,10 @@
 "use client";
+import { testimonials } from "@/DemoApi/Testimonial";
+import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
@@ -10,7 +13,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import quate from "../../public/quote.png";
 function Testimonial() {
   const swiperRef = useRef(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const { clientX, clientY } = event;
+      setPosition({
+        x: (clientX - window.innerWidth / 2) * 0.07,
+        y: (clientY - window.innerHeight / 2) * 0.07,
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
   const goNext = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
@@ -22,65 +38,143 @@ function Testimonial() {
       swiperRef.current.slidePrev();
     }
   };
-  const testimonials = [
-    {
-      quote:
-        "When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!",
-      name: "MARIA D. HALK",
-      title: "MANAGING DIRECTOR",
-    },
-    {
-      quote:
-        "When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!",
-      name: "JOHN DOE",
-      title: "CEO, TECH CORP",
-    },
-  ];
+
   return (
     <section className="testimonials relative ">
       <div className=" hidden lg:block">
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.5fcd9521.jpg&w=256&q=75"
-          alt="test"
-          width={150}
-          height={100}
-          className=" absolute top-[90px] left-[26%] "
-        />
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.82004ae1.jpg&w=128&q=75"
-          alt="test"
-          width={100}
-          height={100}
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
+          className=" absolute top-[90px] left-[26%]  "
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.5fcd9521.jpg&w=256&q=75"
+              alt="test"
+              width={150}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
           className=" absolute top-[500px] left-[2%] "
-        />
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.632d09dc.jpg&w=384&q=75"
-          alt="test"
-          width={250}
-          height={100}
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.82004ae1.jpg&w=128&q=75"
+              alt="test"
+              width={100}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
           className=" absolute top-[700px] left-[8%] "
-        />
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.44563823.jpg&w=96&q=75"
-          alt="test"
-          width={100}
-          height={100}
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.632d09dc.jpg&w=384&q=75"
+              alt="test"
+              width={250}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
           className=" absolute top-[150px] right-[30%] "
-        />
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F5.83e5f14f.jpg&w=256&q=75"
-          alt="test"
-          width={200}
-          height={100}
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.1, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.44563823.jpg&w=96&q=75"
+              alt="test"
+              width={100}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
           className=" absolute top-[550px] right-[5%] "
-        />
-        <Image
-          src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.faeeace1.jpg&w=256&q=75"
-          alt="test"
-          width={130}
-          height={100}
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F5.83e5f14f.jpg&w=256&q=75"
+              alt="test"
+              width={200}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          whileInView={{
+            x: position.x,
+            y: position.y,
+          }}
+          transition={{ type: "spring", stiffness: 50, damping: 10 }}
           className=" absolute top-[680px] right-[15%] "
-        />
+        >
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.3, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.faeeace1.jpg&w=256&q=75"
+              alt="test"
+              width={130}
+              height={100}
+            />
+          </motion.div>
+        </motion.div>
       </div>
       <div className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers lg:w-1/3 mx-auto ">
         <div className="max-w-containers flex justify-center  text-center ">
@@ -89,10 +183,10 @@ function Testimonial() {
             slidesPerView={1}
             loop={true}
             speed={3000}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 5000,
+            //   disableOnInteraction: false,
+            // }}
             modules={[Navigation, Autoplay]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >

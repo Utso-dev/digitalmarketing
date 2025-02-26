@@ -1,21 +1,56 @@
+"use client";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-
 function Project() {
   return (
-    <section className=" lg:bg-[#e0e3cc] bg-whiteColor items-center justify-center p-10  lg:pb-48">
+    <section className=" lg:bg-[#e0e3cc] bg-whiteColor items-center justify-center p-10  lg:py-24">
       <div className=" max-w-containers mx-auto text-center">
-        <h5 className=" text-2xl font-medium text-blackColor2 ">
+        <motion.h5
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 1,
+
+            ease: "easeOut",
+          }}
+          viewport={{ once: true }}
+          className=" text-2xl font-medium text-blackColor2 "
+        >
           Have you project in mind?
-        </h5>
-        <h2 className=" mt-5 lg:px-20 leading-[60px] text-5xl lg:text-[100px] text-blackColor2 font-normal lg:leading-[110px]">
+        </motion.h5>
+        <motion.h2
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 1,
+
+            ease: "easeOut",
+          }}
+          viewport={{ once: true }}
+          className=" mt-5 lg:px-20 leading-[60px] text-5xl lg:text-[100px] text-blackColor2 font-normal lg:leading-[110px]"
+        >
           Let’s make something great together!
-        </h2>
-        <div className=" flex justify-center mt-10 lg:mt-28">
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 1,
+            type: "spring",
+            bounce: 0.8,
+            ease: "easeOut",
+          }}
+          viewport={{ once: true }}
+          className=" flex justify-center mt-10 lg:mt-28"
+        >
           <button className="w-[250px] gap-2  hover:text-whiteColor hover:bg-blackColor transition h-[250px] flex items-center justify-center border-2 border-textColor rounded-full text-xl text-textColor font-medium">
             {" "}
             Contact <br /> with Us <ArrowRight size={35} />
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

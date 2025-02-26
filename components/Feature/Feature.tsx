@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState } from "react";
@@ -6,7 +7,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 const projects = [
   {
     id: 1,
@@ -88,15 +88,48 @@ export default function Feature() {
                     className="w-full h-[600px] object-cover"
                   />
                   <div className="absolute top-1/2 -translate-y-1/2 left-[-750px] sm:left-[-580px] lg:left-[-560px]">
-                    <h2 className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] lg:leading-[150px] font-bold">
+                    <motion.h2
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 1,
+                        delay: 1,
+
+                        ease: "easeOut",
+                      }}
+                      viewport={{ once: false }}
+                      className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] lg:leading-[150px] font-bold"
+                    >
                       {project.title}
-                    </h2>
-                    <h2 className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] pl-8 sm:pl-12 lg:pl-28 font-bold lg:leading-[150px]">
+                    </motion.h2>
+                    <motion.h2
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 1.2,
+                        delay: 1.2,
+
+                        ease: "easeOut",
+                      }}
+                      viewport={{ once: false }}
+                      className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl leading-[70px] pl-8 sm:pl-12 lg:pl-28 font-bold lg:leading-[150px]"
+                    >
                       {project.title2}
-                    </h2>
-                    <p className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl  leading-[70px] lg:leading-[150px] font-bold">
+                    </motion.h2>
+                    <motion.p
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 1.5,
+                        delay: 1.5,
+
+                        ease: "easeOut",
+                      }}
+                      viewport={{ once: false }}
+                      className="lg:text-[150px] sm:text-[80px] sm:leading-[90px] text-6xl  leading-[70px] lg:leading-[150px] font-bold"
+                    >
                       {project.year}
-                    </p>
+                    </motion.p>
                   </div>
                 </div>
               </div>
