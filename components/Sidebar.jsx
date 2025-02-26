@@ -23,9 +23,9 @@ export default function Sidebar({ open, setOpen }) {
         open ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      <div className="container mx-auto pt-10">
+      <div className="container mx-auto pt-1 lg:pt-10">
         <div className="flex flex-col md:flex-row  space-y-10 md:space-y-0 ">
-          <div className="w-full space-y-48 pt-10  md:w-1/4 flex-col h-full justify-between">
+          <div className="w-full space-y-48 pt-10 hidden lg:block  md:w-1/4 flex-col h-full justify-between">
             <Image
               src="https://axtra-next-agency.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsite-logo-white-2.c8e48a63.png&w=256&q=75"
               alt="logo"
@@ -70,13 +70,20 @@ export default function Sidebar({ open, setOpen }) {
               </Link>
             </div>
           </div>
-
-          <div className="w-full md:w-2/4 pt-24">
+          <div className=" flex justify-end lg:hidden ">
+            <button
+              className="p-4 rounded-full  bg-[#1d1d1d]  shadow-lg"
+              onClick={() => setOpen(false)}
+            >
+              <X color="#fff" size={30} />
+            </button>
+          </div>
+          <div className="w-full md:w-2/4 pt-4 px-5 lg:px-0 lg:pt-24">
             <nav className="mt-6">
               {menuItems.map((item) => (
                 <div key={item} className="border-b border-gray-800">
                   <button
-                    className="flex justify-between items-center w-full  text-[40px] font-semibold text-left text-whiteColor"
+                    className="flex justify-between items-center w-full text-xl  lg:text-[40px] font-semibold text-left text-whiteColor"
                     onClick={() => toggleMenu(item)}
                   >
                     {item}
@@ -98,7 +105,7 @@ export default function Sidebar({ open, setOpen }) {
             </nav>
           </div>
 
-          <div className="w-full bg-blackColor2 md:w-1/4 p-6">
+          <div className="w-full bg-blackColor2 hidden lg:block  md:w-1/4 p-6">
             <div className=" flex justify-end">
               <button
                 className="p-4 rounded-full  bg-[#1d1d1d]  shadow-lg"
@@ -108,7 +115,7 @@ export default function Sidebar({ open, setOpen }) {
               </button>
             </div>
 
-            <div className=" mt-24">
+            <div className=" mt-24 hidden lg:block">
               <div className="relative ">
                 <input
                   type="text"

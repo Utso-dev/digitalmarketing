@@ -11,10 +11,10 @@ function NavPopover() {
             <Search className="lg:!w-[25px] lg:!h-[25px] !w-5 !h-5" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className=" lg:left left2 py-2 px-2  bg-bgColor">
+        <PopoverContent className=" lg:left left2 py-2 px-2 dark:!bg-blackColor dark:text-whiteColor  bg-bgColor">
           <div>
             <input
-              className="lg:py-3 py-1 px-2 w-full lg:px-4 text-sm lg:text-base bg-whiteColor outline-none border-none lg:rounded-[10px]"
+              className="lg:py-3 py-1 dark:!bg-blackColor dark:text-whiteColor  px-2 w-full lg:px-4 text-sm lg:text-base bg-whiteColor outline-none border-none lg:rounded-[10px]"
               type="text"
               placeholder="Search.."
             />

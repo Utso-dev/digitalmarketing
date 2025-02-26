@@ -1,20 +1,21 @@
 "use client";
+import { ThemeContext } from "@/context/DarkMode";
 import { testimonials } from "@/DemoApi/Testimonial";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import quateWhit from "../../public/Pi7_quote.png";
 import quate from "../../public/quote.png";
 function Testimonial() {
   const swiperRef = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-
+  const { isDark } = useContext(ThemeContext);
   useEffect(() => {
     const handleMouseMove = (event) => {
       const { clientX, clientY } = event;
@@ -40,7 +41,13 @@ function Testimonial() {
   };
 
   return (
-    <section className="testimonials relative ">
+    <section
+      className={`${
+        isDark
+          ? "dark:bg-blackColor2 testimonialDark lg:mb-[100px] mb-20"
+          : "testimonials relative bg-white lg:mb-[100px] mb-20 "
+      }`}
+    >
       <div className=" hidden lg:block">
         <motion.div
           whileInView={{
@@ -196,12 +203,17 @@ function Testimonial() {
                 className="flex justify-center flex-col items-center"
               >
                 <div className="text-5xl flex justify-center text-black mb-4 text-center">
-                  <Image src={quate} alt="quote" width={40} height={40} />
+                  <Image
+                    src={isDark ? quateWhit : quate}
+                    alt="quote"
+                    width={40}
+                    height={40}
+                  />
                 </div>
-                <p className="text-lg italic font-medium text-gray-700">
+                <p className="text-lg dark:text-whiteColor italic font-medium text-gray-700">
                   {testimonial.quote}
                 </p>
-                <h3 className="mt-10 font-bold text-3xl text-blackColor">
+                <h3 className="mt-10 dark:text-whiteColor font-bold text-3xl text-blackColor">
                   {testimonial.name}
                 </h3>
                 <p className="text-textSecondColor mt-1 text-sm font-bold">
@@ -214,13 +226,13 @@ function Testimonial() {
         <div className=" flex justify-center mt-7 gap-4">
           <button
             onClick={goPrev}
-            className="px-3  z-30  py-3 border border-blackColor rounded-full text-blackColor hover:bg-blackColor hover:text-whiteColor transition"
+            className="px-3  z-30  py-3 dark:border-textSecondColor dark:hover:bg-whiteColor dark:text-textSecondColor border border-blackColor rounded-full text-blackColor hover:bg-blackColor hover:text-whiteColor transition"
           >
             <ArrowLeft />
           </button>
           <button
             onClick={goNext}
-            className="px-3  z-30  py-3 border border-blackColor rounded-full text-blackColor hover:bg-blackColor hover:text-whiteColor transition"
+            className="px-3 dark:border-textSecondColor dark:hover:bg-whiteColor dark:text-textSecondColor z-30  py-3 border border-blackColor rounded-full text-blackColor hover:bg-blackColor hover:text-whiteColor transition"
           >
             <ArrowRight />
           </button>

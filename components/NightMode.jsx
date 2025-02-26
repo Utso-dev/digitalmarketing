@@ -1,11 +1,12 @@
 "use client";
+import { ThemeContext } from "@/context/DarkMode";
 import { AnimatePresence, motion } from "framer-motion";
 import { Settings, X } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 function NightMode() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { isDark, setIsDark } = useContext(ThemeContext);
   return (
     <div className="fixed top-1/2 -translate-y-1/2 right-0 z-50">
       {/* Toggle Button */}
@@ -40,7 +41,7 @@ function NightMode() {
           >
             {/* Cursor Selection */}
             <div className="w-full">
-              <h4 className="text-xl font-bold mb-2 text-center">Cursor</h4>
+              <h4 className="text-xl font-bold mb-2 ">Cursor</h4>
               <select className="w-full bg-[#303030] border-transparent py-2 rounded px-4">
                 <option value="default">Default</option>
                 <option value="animation">Animation</option>
@@ -49,12 +50,22 @@ function NightMode() {
 
             {/* Mode Selection */}
             <div className="mt-6 w-full">
-              <h4 className="text-xl font-bold mb-2 text-center">Mode</h4>
+              <h4 className="text-xl font-bold mb-2 ">Mode</h4>
               <div className="flex justify-center gap-2">
-                <button className="px-6 py-2 rounded bg-[#303030] text-white font-semibold">
+                <button
+                  onClick={() => setIsDark(false)}
+                  className={`${
+                    isDark ? "text-textSecondColor" : "text-white"
+                  } px-6 py-2 rounded bg-[#303030]  font-semibold`}
+                >
                   Light
                 </button>
-                <button className="px-5 py-2 rounded bg-[#303030] text-white font-semibold">
+                <button
+                  onClick={() => setIsDark(true)}
+                  className={`${
+                    isDark ? "text-white" : "text-textSecondColor"
+                  } px-6 py-2 rounded bg-[#303030]  font-semibold`}
+                >
                   Dark
                 </button>
               </div>

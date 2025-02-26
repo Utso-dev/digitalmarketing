@@ -2,8 +2,8 @@ import { Geist } from "next/font/google";
 
 import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
+import DarkMode from "@/components/mode/DarkMode";
 import Navbar from "@/components/Navbar";
-import NightMode from "@/components/NightMode";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,11 +25,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable}  antialiased`}>
-        <NightMode />
-        <CustomCursor />
-        <Navbar />
-        {children}
-        <Footer />
+        <DarkMode>
+          <CustomCursor />
+          <Navbar />
+          {children}
+          <Footer />
+        </DarkMode>
       </body>
     </html>
   );

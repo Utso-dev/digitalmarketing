@@ -32,7 +32,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="bg-bg4Color py-16 px-2.5 md:px-12">
+    <section className="bg-bg4Color dark:bg-blackColor dark:text-whiteColor py-16 px-2.5 md:px-12">
       <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
         {/* Heading */}
         <div className="lg:grid grid-cols-2 gap-20">
@@ -47,7 +47,7 @@ const Pricing = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className=" text-lg text-textColor font-semibold uppercase"
+              className=" text-lg text-textColor dark:text-whiteColor font-semibold uppercase"
             >
               Pricing Table
             </motion.h4>
@@ -61,7 +61,7 @@ const Pricing = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="lg:text-[60px] lg:leading-[70px] text-3xl font-bold text-blackColor mb-8"
+              className="lg:text-[60px] dark:text-whiteColor lg:leading-[70px] text-3xl font-bold text-blackColor mb-8"
             >
               BE KIND TO YOUR MIND
             </motion.h2>
@@ -73,7 +73,7 @@ const Pricing = () => {
                 {accordionData.map((item, index) => (
                   <div key={index} className="border-b border-blackColor2">
                     <button
-                      className="w-full text-left text-blackColor2 flex justify-between items-center py-5 font-bold text-lg"
+                      className="w-full text-left text-blackColor2 dark:text-whiteColor flex justify-between items-center py-5 font-bold text-lg"
                       onClick={() => toggleAccordion(index)}
                     >
                       {item.title}
@@ -82,13 +82,15 @@ const Pricing = () => {
                       </span>
                     </button>
                     <div
-                      className={`transition-all duration-500 ease-in-out overflow-hidden transform ${
+                      className={`transition-all duration-500 dark:text-whiteColor ease-in-out overflow-hidden transform ${
                         openIndex === index
                           ? "max-h-[300px] opacity-100 scale-y-100"
                           : "max-h-0 opacity-0 scale-y-95"
                       }`}
                     >
-                      <p className="text-textColor pb-6">{item.content}</p>
+                      <p className="text-textColor dark:text-textSecondColor pb-6">
+                        {item.content}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -109,7 +111,7 @@ const Pricing = () => {
                   ease: "easeOut",
                 }}
                 viewport={{ once: true }}
-                className="bg-blackColor text-whiteColor py-8 p-6 rounded-xl relative shadow-lg"
+                className="bg-blackColor text-whiteColor dark:bg-blackColor2 py-8 p-6 rounded-xl relative shadow-lg"
               >
                 <span className="absolute top-[-14px] right-7 bg-bgRedColor text-whiteColor text-xs font-bold px-3 py-1 rounded-lg">
                   BEST VALUE

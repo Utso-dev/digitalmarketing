@@ -28,15 +28,15 @@ function Blogs() {
           </div>
         </div>
       </section> */}
-      <section className=" py-10 px-2.5 lg:px-0 lg:py-[100px] relative  lg:after:absolute lg:after:content-[''] lg:after:h-full lg:after:w-[1px] lg:after:bg-[#efefef] lg:after:top-0 lg:after:right-[58%] ">
+      <section className=" dark:bg-blackColor dark:text-whiteColor py-10 px-2.5 lg:px-0 lg:py-[100px] relative  lg:after:absolute lg:after:content-[''] lg:after:h-full lg:after:w-[1px] lg:after:bg-[#efefef] lg:after:top-0 lg:after:right-[58%] ">
         <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
-          <div className=" lg:px-[360px] relative bg-whiteColor z-30 lg:py-10">
+          <div className=" lg:px-[360px] relative dark:bg-blackColor bg-whiteColor z-30 lg:py-10">
             <motion.h5
               initial={{ y: -100, x: 50, opacity: 0 }}
               whileInView={{ y: 0, x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="mb-2 uppercase text-textColor
+              className="mb-2 uppercase dark:text-whiteColor text-textColor
            text-[18px] font-semibold"
             >
               Recent Blog
@@ -46,7 +46,7 @@ function Blogs() {
               whileInView={{ y: 0, x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
-              className="uppercase text-blackColor text-[32px] lg:text-[60px]  lg:leading-[65px] font-bold"
+              className="uppercase text-blackColor dark:text-whiteColor text-[32px] lg:text-[60px]  lg:leading-[65px] font-bold"
             >
               Read Updated Journal
             </motion.h3>
@@ -57,7 +57,7 @@ function Blogs() {
               whileInView={{ y: 0, x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className=" text-[20px] lg:text-lg text-textColor font-semibold "
+              className=" text-[20px] lg:text-lg dark:text-textSecondColor text-textColor font-semibold "
             >
               Read our blog and try to see everything from every perspective.
               Our passion lies in making everything accessible and aesthetic for
@@ -83,11 +83,11 @@ function Blogs() {
                 height={500}
                 className="w-[50%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
               />
-              <div className="absolute w-[60%]  sm:w-[50%] sm:top-[0%] h-full lg:h-[60%]  top-[0px] md:left-28 left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
+              <div className="absolute w-[60%] dark:bg-blackColor dark:text-whiteColor sm:w-[50%] sm:top-[0%] h-full lg:h-[60%]  top-[0px] md:left-28 left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
                 <h5 className="text-base text-textColor font-semibold">
                   UI Design . 02 May 2019
                 </h5>
-                <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
+                <h3 className="pb-4 dark:text-whiteColor text-2xl text-blackColor leading-[30px] font-bold">
                   How to bring fold to your startup company with Axtra
                 </h3>
                 <div className="border-t-[1px] border-textSecondColor">
@@ -115,11 +115,11 @@ function Blogs() {
                 height={500}
                 className="w-[50%] md:w-[60%]  lg:w-[50%] sm:w-[30%]"
               />
-              <div className="absolute w-[60%] md:left-28  lg:h-[60%]  sm:w-[50%] sm:top-[0%]   top-[0px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9  py-7 space-y-3">
-                <h5 className="text-base text-textColor font-semibold">
+              <div className="absolute dark:bg-blackColor dark:text-whiteColor w-[60%] md:left-28  lg:h-[60%]  sm:w-[50%] sm:top-[0%]   top-[0px] left-[10%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9  py-7 space-y-3">
+                <h5 className="text-base text-textColor   font-semibold">
                   UI Design . 02 May 2019
                 </h5>
-                <h3 className="pb-4 text-2xl text-blackColor leading-[30px] font-bold">
+                <h3 className="pb-4 text-2xl dark:text-whiteColor text-blackColor leading-[30px] font-bold">
                   How to bring fold to your startup company with Axtra
                 </h3>
                 <div className="border-t-[1px] border-textSecondColor">

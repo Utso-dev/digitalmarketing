@@ -4,22 +4,22 @@ import CountUp from "react-countup";
 
 function WorkFlow() {
   return (
-    <section className="bg-bgSecondColor md:pt-28 pt-14 pb-10 lg:pb-48">
+    <section className="bg-bgSecondColor dark:bg-blackColor dark:text-whiteColor md:pt-28 pt-14 pb-10 lg:pb-48">
       <div className="max-w-containers mx-auto">
         <div className="lg:grid grid-cols-2 gap-7">
           <div className="col-span-1 pb-10">
             <div className="flex flex-col justify-between h-full w-full">
               <div className="flex text-center justify-around">
                 <div>
-                  <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
+                  <h3 className="lg:text-[100px] dark:text-whiteColor text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
                     <CountUp end={25} duration={5} />K
                   </h3>
-                  <p className="text-xl text-textColor font-semibold">
+                  <p className="text-xl text-textColor  font-semibold">
                     Project <br /> completed
                   </p>
                 </div>
                 <div>
-                  <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
+                  <h3 className="lg:text-[100px] text-5xl dark:text-whiteColor leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
                     <CountUp end={8} duration={5} />k
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
@@ -29,7 +29,7 @@ function WorkFlow() {
               </div>
               <div className="flex text-center justify-around mt-10">
                 <div>
-                  <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
+                  <h3 className="lg:text-[100px] dark:text-whiteColor text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
                     <CountUp end={15} duration={5} />
                   </h3>
                   <p className="text-xl text-textColor font-semibold">
@@ -37,7 +37,7 @@ function WorkFlow() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="lg:text-[100px] text-5xl leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
+                  <h3 className="lg:text-[100px] text-5xl dark:text-whiteColor leading-[60px] lg:leading-[110px] text-blackColor2 font-semibold">
                     <CountUp end={98} duration={5} />
                   </h3>
                   <p className="text-xl text-textColor font-semibold">

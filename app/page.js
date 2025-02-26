@@ -32,7 +32,7 @@ export default function Home() {
       <div className="lg:mb-[100px] mb-10">
         <Feature />
       </div>
-      <div className="lg:mb-[100px] mb-20">
+      <div className="">
         <Testimonial />
       </div>
       <div className=" lg:hidden">

@@ -15,7 +15,9 @@
   --bgRed-color: #ff9776;
   --border-color: #1f2937;
 }
-
+.dark {
+  @apply bg-blackColor text-whiteColor;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -121,6 +123,15 @@
     padding-bottom: 50px !important;
     overflow: hidden;
   }
+  .testimonialDark {
+    background-image: url("../public/download.png");
+    background-repeat: no-repeat;
+    background-position: -75px 75px;
+    position: relative;
+    padding-top: 60px !important;
+    padding-bottom: 50px !important;
+    overflow: hidden;
+  }
 }
 @media only screen and (max-width: 800px) {
   .testimonials {
@@ -132,9 +143,27 @@
     padding-bottom: 60px !important;
     overflow: hidden;
   }
+  .testimonialDark {
+    background-image: url("../public/download.png");
+    background-repeat: no-repeat;
+    background-position: -75px 75px;
+    position: relative;
+    padding-top: 80px !important;
+    padding-bottom: 60px !important;
+    overflow: hidden;
+  }
 }
 .testimonials {
   background-image: url("https://axtra-next-agency.vercel.app/assets/imgs/testimonial/3/bg.png");
+  background-repeat: no-repeat;
+  background-position: -75px 75px;
+  position: relative;
+  padding-top: 488px;
+  padding-bottom: 265px;
+  overflow: hidden;
+}
+.testimonialDark {
+  background-image: url("../public/download.png");
   background-repeat: no-repeat;
   background-position: -75px 75px;
   position: relative;
