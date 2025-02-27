@@ -54,9 +54,9 @@ export default function SEOSection({ item }) {
             ease: "easeOut",
           }}
           viewport={{ once: true }}
-          className="col-span-1 flex mt-10 lg:mt-0 lg:justify-end"
+          className="col-span-1 flex mt-16 lg:mt-0 lg:justify-end"
         >
-          <button className="w-[174px] h-[174px] border border-gray-400 rounded-full flex items-center justify-center cursor-pointer hover:bg-blackColor group  transition">
+          <button className="w-[174px] h-[174px] border border-gray-400 rounded-full mt-4 lg:mt-0 flex items-center justify-center cursor-pointer hover:bg-blackColor group  transition">
             <span className="flex dark:text-textSecondColor items-center text-[18px] font-semibold group-hover:text-whiteColor gap-1 text-gray-700">
               Details <ArrowUpRight size={16} />
             </span>

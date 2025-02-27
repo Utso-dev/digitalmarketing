@@ -82,19 +82,20 @@ export default function Sidebar({ open, setOpen }) {
             <nav className="mt-6">
               {menuItems.map((item) => (
                 <div key={item} className="border-b border-gray-800">
-                  <button
-                    className="flex justify-between items-center w-full text-xl  lg:text-[40px] font-semibold text-left text-whiteColor"
-                    onClick={() => toggleMenu(item)}
-                  >
-                    {item}
-                    <div className="bg-[#ffffff1a] p-8">
+                  <div className="flex justify-between items-center w-full text-xl  lg:text-[40px] font-semibold text-left text-whiteColor">
+                    <Link href={item?.toLowerCase()}>{item}</Link>
+
+                    <button
+                      onClick={() => toggleMenu(item)}
+                      className="bg-[#ffffff1a] p-8"
+                    >
                       {openMenus.includes(item) ? (
                         <Minus className="text-whiteColor  " />
                       ) : (
                         <Plus className="text-whiteColor  " />
                       )}
-                    </div>
-                  </button>
+                    </button>
+                  </div>
                   {openMenus.includes(item) && (
                     <div className=" text-whiteColor text-sm p-4">
                       Submenu for {item}
