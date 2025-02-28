@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import SEOSection from "./SEOSection";
 function Services() {
   return (
-    <div className="dark:bg-blackColor2 overflow-hidden">
+    <div className="dark:bg-blackColor2 ">
       <section className=" py-10 px-2.5 lg:px-0 lg:py-[100px] overflow-hidden dark:bg-blackColor2 relative  md:after:absolute md:after:content-[''] md:after:h-full md:after:w-[1px] md:after:bg-[#efefef] md:after:top-0 md:after:right-[68%] lg:after:right-[58%] ">
-        <div className=" lg:max-w-containers overflow-hidden  md:max-w-mdcontainers sm:max-w-smcontainers mx-auto sm:pr-24">
+        <div className=" lg:max-w-containers   md:max-w-mdcontainers sm:max-w-smcontainers mx-auto sm:pr-24">
           <div className=" md:px-28 lg:px-[300px] relative dark:text-whiteColor dark:bg-blackColor2 bg-whiteColor z-30 lg:py-10">
             <motion.h5
               initial={{ y: -100, x: 50, opacity: 0 }}
@@ -28,7 +28,7 @@ function Services() {
               Our marketing Services
             </motion.h3>
           </div>
-          <div className=" md:pl-[240px] lg:pl-[560px] lg:pr-[300px] mt-8 lg:mt-20">
+          <div className=" md:pl-[240px] lg:pl-[560px] overflow-hidden lg:pr-[300px] mt-8 lg:mt-20">
             <motion.p
               initial={{ y: -100, x: 50, opacity: 0 }}
               whileInView={{ y: 0, x: 0, opacity: 1 }}
