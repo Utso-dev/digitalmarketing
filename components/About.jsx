@@ -6,7 +6,7 @@ import Image from "next/image";
 function About() {
   return (
     <section className="bg-blackColor py-28 relative lg:after:absolute lg:after:content-[''] after:h-full after:w-[1px] after:bg-textColor after:top-0 after:right-[39rem]">
-      <div className="md:max-w-containers sm:max-w-smcontainers mx-auto px-2.5 lg:px-0">
+      <div className="md:max-w-containers overflow-hidden sm:max-w-smcontainers mx-auto px-2.5 lg:px-0">
         <div className="md:grid grid-cols-2 lg:gap-20 md:gap-7">
           <div className="col-span-1">
             <Image

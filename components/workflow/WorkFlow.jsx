@@ -4,8 +4,8 @@ import CountUp from "react-countup";
 
 function WorkFlow() {
   return (
-    <section className="bg-bgSecondColor dark:bg-blackColor dark:text-whiteColor md:pt-28 pt-14 pb-10 lg:pb-48">
-      <div className="max-w-containers mx-auto">
+    <section className="bg-bgSecondColor overflow-hidden dark:bg-blackColor dark:text-whiteColor md:pt-28 pt-14 pb-10 lg:pb-48">
+      <div className="max-w-containers overflow-hidden mx-auto">
         <div className="lg:grid grid-cols-2 gap-7">
           <div className="col-span-1 pb-10">
             <div className="flex flex-col justify-between h-full w-full">

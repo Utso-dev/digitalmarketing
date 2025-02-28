@@ -28,8 +28,8 @@ function Blogs() {
           </div>
         </div>
       </section> */}
-      <section className=" dark:bg-blackColor dark:text-whiteColor py-10 px-2.5 lg:px-0 lg:py-[100px] relative  lg:after:absolute lg:after:content-[''] lg:after:h-full lg:after:w-[1px] lg:after:bg-[#efefef] lg:after:top-0 lg:after:right-[58%] ">
-        <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
+      <section className=" dark:bg-blackColor overflow-hidden dark:text-whiteColor py-10 px-2.5 lg:px-0 lg:py-[100px] relative  lg:after:absolute lg:after:content-[''] lg:after:h-full lg:after:w-[1px] lg:after:bg-[#efefef] lg:after:top-0 lg:after:right-[58%] ">
+        <div className=" lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
           <div className=" lg:px-[360px] relative dark:bg-blackColor bg-whiteColor z-30 lg:py-10">
             <motion.h5
               initial={{ y: -100, x: 50, opacity: 0 }}

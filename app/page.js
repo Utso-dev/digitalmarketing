@@ -15,7 +15,7 @@ import WorkFlow from "@/components/workflow/WorkFlow";
 export default function Home() {
   return (
     <div>
-      <div className="lg:my-[100px] mb-10 ">
+      <div className="lg:my-[100px] overflow-hidden mb-10 ">
         <Banner />
       </div>
       <div className="mb-[100px]">
@@ -32,30 +32,30 @@ export default function Home() {
       <div className="lg:mb-[100px] mb-10">
         <Feature />
       </div>
-      <div className="">
+      <div className="overflow-hidden">
         <Testimonial />
       </div>
-      <div className=" lg:hidden">
-        <div className="">
+      <div className=" lg:hidden overflow-hidden">
+        <div className="overflow-hidden">
           <Choose />
         </div>
-        <div className="">
+        <div className="overflow-hidden">
           <MarketingSection />
         </div>
-        <div className="">
+        <div className="overflow-hidden">
           <WorkFlow />
         </div>
-        <div className="">
+        <div className="overflow-hidden">
           <Project />
         </div>
       </div>
-      <div className="">
+      <div className="overflow-hidden">
         <Scroll />
       </div>
-      <div className="">
+      <div className="overflow-hidden">
         <PriceTable />
       </div>
-      <div className=" mb-24">
+      <div className="overflow-hidden mb-24">
         <Blogs />
       </div>
     </div>

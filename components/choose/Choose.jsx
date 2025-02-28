@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 function Choose() {
   return (
-    <section className=" bg-bgSecondColor dark:bg-blackColor dark:text-whiteColor py-10 lg:py-48">
-      <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
+    <section className=" bg-bgSecondColor overflow-hidden dark:bg-blackColor dark:text-whiteColor py-10 lg:py-48">
+      <div className=" lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
         <motion.h1
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

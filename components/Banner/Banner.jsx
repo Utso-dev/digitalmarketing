@@ -11,7 +11,7 @@ function Banner() {
 
   return (
     <>
-      <section className="lg:max-w-containers dark:!bg-blackColor dark:text-whiteColor md:max-w-mdcontainers sm:max-w-smcontainers relative mx-auto  px-2.5 lg:px-0">
+      <section className="lg:max-w-containers  dark:!bg-blackColor dark:text-whiteColor md:max-w-mdcontainers sm:max-w-smcontainers relative mx-auto  px-2.5 lg:px-0">
         <div className="sm:grid grid-cols-5 gap-5 ">
           <div className=" col-span-3">
             <BannerText />

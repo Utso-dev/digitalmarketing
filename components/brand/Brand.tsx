@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 function Brand() {
   return (
-    <section className=" max-w-containers mx-auto ">
+    <section className=" max-w-containers mx-auto overflow-hidden ">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

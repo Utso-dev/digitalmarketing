@@ -51,8 +51,8 @@ export default function Feature() {
   };
 
   return (
-    <section className="bg-black text-white py-28 relative">
-      <div className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto lg:px-10 px-4">
+    <section className="bg-black overflow-hidden text-white py-28 relative">
+      <div className="lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers mx-auto lg:px-10 px-4">
         <p className="text-sm uppercase opacity-80">Featured Work</p>
 
         {/* Slide Counter */}

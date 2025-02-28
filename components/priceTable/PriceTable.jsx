@@ -32,8 +32,8 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="bg-bg4Color dark:bg-blackColor dark:text-whiteColor py-16 px-2.5 md:px-12">
-      <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
+    <section className="bg-bg4Color overflow-hidden dark:bg-blackColor dark:text-whiteColor py-16 px-2.5 md:px-12">
+      <div className=" lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
         {/* Heading */}
         <div className="lg:grid grid-cols-2 gap-20">
           <div className=" col-span-1">

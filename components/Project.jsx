@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 function Project() {
   return (
-    <section className=" lg:bg-[#e0e3cc] dark:bg-blackColor2 dark:text-whiteColor bg-whiteColor items-center justify-center p-10  lg:py-24">
-      <div className=" max-w-containers mx-auto text-center">
+    <section className=" lg:bg-[#e0e3cc] dark:bg-blackColor2 overflow-hidden dark:text-whiteColor bg-whiteColor items-center justify-center p-10  lg:py-24">
+      <div className=" max-w-containers overflow-hidden mx-auto text-center">
         <motion.h5
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

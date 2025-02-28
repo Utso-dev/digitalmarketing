@@ -44,8 +44,8 @@ function Testimonial() {
     <section
       className={`${
         isDark
-          ? "dark:bg-blackColor2 testimonialDark lg:mb-[100px] mb-20"
-          : "testimonials relative bg-white lg:mb-[100px] mb-20 "
+          ? "dark:bg-blackColor2 overflow-hidden testimonialDark lg:mb-[100px] mb-20"
+          : "testimonials overflow-hidden relative bg-white lg:mb-[100px] mb-20 "
       }`}
     >
       <div className=" hidden lg:block">
@@ -183,7 +183,7 @@ function Testimonial() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers lg:w-1/3 mx-auto ">
+      <div className="lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers lg:w-1/3 mx-auto ">
         <div className="max-w-containers flex justify-center  text-center ">
           <Swiper
             spaceBetween={50}

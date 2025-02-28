@@ -1,7 +1,7 @@
 export default function MarketingSection() {
   return (
-    <section className="bg-bgSecondColor dark:bg-blackColor dark:text-whiteColor py-10 lg:pt-28 lg:bg-bgthirdColor items-center justify-center lg:p-10 px-2.5 lg:px-0">
-      <div className=" lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="bg-bgSecondColor overflow-hidden dark:bg-blackColor dark:text-whiteColor py-10 lg:pt-28 lg:bg-bgthirdColor items-center justify-center lg:p-10 px-2.5 lg:px-0">
+      <div className=" lg:max-w-containers overflow-hidden md:max-w-mdcontainers sm:max-w-smcontainers mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left Section */}
         <div className=" col-span-1 lg:space-y-20">
           <h3 className="w-20 text-sm font-bold dark:text-whiteColor text-blackColor2 hidden lg:block">
