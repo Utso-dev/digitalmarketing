@@ -19,7 +19,7 @@ function BannerText() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-[70px] leading-[75] dark:text-whiteColor sm:text-[100px] sm:leading-[100px]  uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
+          className="text-[80px] leading-[90px] dark:text-whiteColor sm:text-[100px] sm:leading-[100px]  uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
         >
           {" "}
           {name1.map((w, i) => (
@@ -39,7 +39,7 @@ function BannerText() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className=" sm:ml-[15rem] dark:text-whiteColor md:absolute  sm:leading-[100px] z-30  sm:text-[100px] lg:right-0 md:right-10 ml-[4.5rem] md:text-[110px]  md:leading-[100px] uppercase text-[70px] leading-[75] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
+          className=" sm:ml-[18rem] dark:text-whiteColor md:absolute  sm:leading-[100px] z-30  sm:text-[100px] lg:right-0 md:right-10 ml-[4.5rem] md:text-[110px]  md:leading-[100px] uppercase text-[80px] leading-[90px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
         >
           {name2.map((w, i) => (
             <motion.span
