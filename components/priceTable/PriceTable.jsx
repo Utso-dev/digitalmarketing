@@ -42,7 +42,6 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1.2,
-                delay: 1,
 
                 ease: "easeOut",
               }}
@@ -56,7 +55,6 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1.2,
-                delay: 1,
 
                 ease: "easeOut",
               }}

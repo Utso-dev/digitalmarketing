@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 export default function SEOSection({ item }) {
   return (
-    <section className="lg:py-16 py-12 px-2.5 lg:px-0 border-t border-gray-300">
+    <section className="lg:py-16 py-12 px-2.5 overflow-hidden lg:px-0 border-t border-gray-300">
       <div className=" mx-auto  md:grid grid-cols-3 gap-8 items-center">
         {/* Left Section - Heading */}
         <motion.h2
