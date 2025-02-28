@@ -66,7 +66,7 @@ function Blogs() {
           </div>
         </div>
       </section>
-      <div className=" lg:mt-24 lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
+      <div className=" lg:mt-24 overflow-hidden lg:max-w-containers md:max-w-mdcontainers sm:max-w-smcontainers mx-auto">
         <div className="md:grid  md:grid-cols-2 gap-3 lg:gap-8 ">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
