@@ -9,7 +9,7 @@ function BannerText() {
     <div>
       <div>
         <div className="relative">
-          <h4 className="font-bold uppercase text-lg lg:text-2xl dark:text-whiteColor after:absolute after:content-[''] dark:after:bg-whiteColor after:top-1/2 left-10 lg:after:left-28 after:ml-4 after:w-10 lg:after:w-28 after:h-[1px] after:bg-black">
+          <h4 className="font-bold uppercase mt-4  lg:mt-0 text-lg lg:text-2xl dark:text-whiteColor after:absolute after:content-[''] dark:after:bg-whiteColor after:top-1/2 left-10 lg:after:left-28 after:ml-4 after:w-10 lg:after:w-28 after:h-[1px] after:bg-black">
             Digital
           </h4>
         </div>
@@ -19,7 +19,7 @@ function BannerText() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-[70px] leading-[70px] dark:text-whiteColor sm:text-[100px] sm:leading-[100px]  uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
+          className="text-[70px] leading-[65px] dark:text-whiteColor sm:text-[100px] sm:leading-[100px]  uppercasetext-blackColor md:text-[110px] md:leading-[100px] lg:leading-[240px]  lg:text-[260px] font-extrabold lg:font-bold"
         >
           {" "}
           {name1.map((w, i) => (
@@ -39,7 +39,7 @@ function BannerText() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className=" sm:ml-[15rem] dark:text-whiteColor md:absolute  sm:leading-[100px] z-30  sm:text-[100px] lg:right-0 md:right-10 ml-[9rem] md:text-[110px]  md:leading-[100px] uppercase text-[70px] leading-[70px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
+          className=" sm:ml-[15rem] dark:text-whiteColor md:absolute  sm:leading-[100px] z-30  sm:text-[100px] lg:right-0 md:right-10 ml-[9rem] md:text-[110px]  md:leading-[100px] uppercase text-[70px] leading-[65px] text-blackColor lg:leading-[240px] lg:text-[260px] font-extrabold  lg:font-bold"
         >
           {name2.map((w, i) => (
             <motion.span
