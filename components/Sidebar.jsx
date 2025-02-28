@@ -70,9 +70,9 @@ export default function Sidebar({ open, setOpen }) {
               </Link>
             </div>
           </div>
-          <div className=" flex justify-end lg:hidden ">
+          <div className=" flex justify-end mr-10 lg:hidden ">
             <button
-              className="p-4 rounded-full  bg-[#1d1d1d]  shadow-lg"
+              className="lg:p-4 p-3 rounded-full  bg-[#1d1d1d]  shadow-lg"
               onClick={() => setOpen(false)}
             >
               <X color="#fff" size={30} />
@@ -87,7 +87,7 @@ export default function Sidebar({ open, setOpen }) {
 
                     <button
                       onClick={() => toggleMenu(item)}
-                      className="bg-[#ffffff1a] p-8"
+                      className="bg-[#ffffff1a] p-4 lg:p-8"
                     >
                       {openMenus.includes(item) ? (
                         <Minus className="text-whiteColor  " />

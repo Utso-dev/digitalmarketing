@@ -18,11 +18,11 @@ export default function Home() {
       <div className="lg:my-[100px] overflow-hidden mb-10 ">
         <Banner />
       </div>
-      <div className="mb-[100px]">
+      <div className="mb-[100px] ">
         <Brand />
       </div>
 
-      <div className="">
+      <div className="overflow-hidden">
         <About />
       </div>
 
@@ -35,8 +35,8 @@ export default function Home() {
       <div className="overflow-hidden">
         <Testimonial />
       </div>
-      <div className=" lg:hidden overflow-hidden">
-        <div className="overflow-hidden">
+      <div className=" lg:hidden ">
+        <div className="">
           <Choose />
         </div>
         <div className="overflow-hidden">

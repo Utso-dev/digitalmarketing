@@ -81,7 +81,7 @@ function Blogs() {
                 alt="blogs"
                 width={300}
                 height={500}
-                className="w-[60%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
+                className="w-[50%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
               />
               <div className="absolute w-[60%] dark:bg-blackColor dark:text-whiteColor sm:w-[50%] sm:top-[0%] h-full lg:h-[60%]  top-[0px] md:left-28 left-[13%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
                 <h5 className="text-base text-textColor font-semibold">
@@ -112,7 +112,7 @@ function Blogs() {
                 alt="blogs"
                 width={300}
                 height={500}
-                className="w-[60%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
+                className="w-[50%] md:w-[60%] lg:w-[50%] sm:w-[30%]"
               />
               <div className="absolute w-[60%] dark:bg-blackColor dark:text-whiteColor sm:w-[50%] sm:top-[0%] h-full lg:h-[60%]  top-[0px] md:left-28 left-[13%] lg:top-[42%] lg:left-[34%] bg-whiteColor pl-6 lg:pl-9 lg:py-9 py-6 space-y-3">
                 <h5 className="text-base text-textColor font-semibold">
